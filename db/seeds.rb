@@ -12,3 +12,17 @@ Flat.create!(
   price_per_night: 75,
   number_of_guests: 3
 )
+Flat.create!(
+  name: ' Spacious Garden house spain',
+  address: 'Codere, Calle de Espoz y Mina 2, 28012, Sol, Madrid, Comunidad de Madrid, ESP 	28012',
+  description: 'A lovely, Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 75,
+  number_of_guests: 3
+)
+Flat.create!(
+  name: ' Spacious Garden house spain',
+  address: 'Lambeth road sw2, 8da',
+  description: 'A lovely, Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 185,
+  number_of_guests: 5
+)
