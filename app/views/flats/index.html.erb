@@ -1,4 +1,4 @@
-<% @flats.each do |flat| %>
+<% form_for@flats.each do |flat| %>
     <div class = "appartments">
       <h2><%= flat.name %></h2>
       <p><%=flat.description%></p>
@@ -6,5 +6,5 @@
       <p><%=flat.number_of_guests%></p>
       <p><%=flat.price_per_night%></p>
     </div>
-link_to 
+<%= link_to 'More info', flats_show_path(flat) %>
   <% end %>

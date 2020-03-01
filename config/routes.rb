@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get "flats", to:"flats#index"
   get "flats/new", to: "flats#new"
   post "flats", to: "flats#create"
-  get  "flats/:id", to: "flats#show"
+  get  "flats/:id", to: "flats#show", as: :flats_show
   get "flats/:id/edit", to: "flats#edit"
   patch "flats/:id", to: "flats#update"
   delete "flats/:id", to:"flats#destory"
