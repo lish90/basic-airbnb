@@ -25,7 +25,7 @@ class FlatsController < ApplicationController
 
   def update
     if @flat.update(flat_params)
-      redirect_to @flat
+      redirect_to flats_show(@flat)
     else 
       render :edit 
     end 
