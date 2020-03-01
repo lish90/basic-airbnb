@@ -1,8 +1,9 @@
 <% @flats.each do |flat| %>
-    <flat>
+    <div class = "appartments">
       <h2><%= flat.name %></h2>
       <p><%=flat.description%></p>
       <p><%=flat.address%></p>
-      <%=flat.content[0..5] %>
-    </flat>
+      <p><%=flat.number_of_guests%></p>
+      <p><%=flat.price_per_night%></p>
+    </div>
   <% end %>
