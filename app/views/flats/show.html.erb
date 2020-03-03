@@ -1,4 +1,8 @@
+
+
+
 <div class = "appartments_card">
+
 <h2><%= @flat.name %></h2>
 <p><%=@flat.description%></p>
 <p><%=@flat.address%></p>
@@ -6,4 +10,5 @@
 <p><%=@flat.price_per_night%></p>
 <%= link_to 'all flats', flats_path(@flat) %>
 <%= link_to 'edit', flat_edit_path(@flat) %>
+<%= link_to 'Remove',  flat_destroy_path(@flat), method: :delete %>
 </div>
