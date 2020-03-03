@@ -1,0 +1,12 @@
+<%= form_for(@flat) do |flat| %>
+<%=flat.label :name %>
+<%=flat.text_field :name%>
+<%=flat.label :address%>
+<%=flat.text_field :address%>
+<%=flat.label :description%>
+<%=flat.text_field :description%>
+<%=flat.label :price_per_night%>
+<%=flat.text_field :price_per_night%>
+<%=flat.label :number_of_guests%>
+<%=flat.text_field :number_of_guests%>
+<% end %>
