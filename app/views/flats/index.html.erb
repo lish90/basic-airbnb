@@ -1,16 +1,24 @@
+
+
 <h1> All our Flats</h1>
 <br>
 <br>
 
 
 <% @flats.each do |flat| %>
-    <div class = "appartments">
+    <div class = "appartments-card">
       <h2><%= flat.name %></h2>
       <p><%=flat.description%></p>
       <p><%=flat.address%></p>
-      <p><%=flat.number_of_guests%></p>
+      <div class = "appartments-cardbottom">
+      <i class="fas fa-user-friends"></i><p><%=flat.number_of_guests%></p>
       <p><%=flat.price_per_night%></p>
+      </div>
     </div>
 <%= link_to 'More info', flats_show_path(flat) %>
 
   <% end %>
+  </div>
+
+
+  
