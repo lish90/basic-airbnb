@@ -2,11 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .appartments-card{
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 200rem);
   grid-gap: 16px;
+  background-color: wheat;
 }
 
 .appartments-cardbottom{
+  color: whitesmoke;
+  grid: inline ;
 
 }
